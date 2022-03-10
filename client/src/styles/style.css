@@ -1,9 +1,17 @@
+.primary-blue {
+  background-color: aqua;
+}
+
+.secondary-grey {
+  background-color: grey;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-.form-page {
+.center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,15 +21,30 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.form-page {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  background-color: #e3e3e3;
 }
 
 .form-page .form-container {
-  background-color: red;
-  height: 300px;
-  width: 300px;
+  max-width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 10px;
+          box-shadow: 5px 10px;
+}
+
+.form-page .form-container .form {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,5 +52,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form-page .form-container .form input,
+.form-page .form-container .form button {
+  margin-bottom: 10px;
+  width: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */

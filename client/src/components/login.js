@@ -1,15 +1,23 @@
-import React from 'react'
+import React from "react";
 
 export default function login() {
   return (
-    <div className='form-page'>
-        <form className='form-container'>
-            <h1>Login</h1>
-            <label for="id">Enter ID</label>
-            <input type="text" name="id"></input>
-            <button>Login</button>
-            <button>Generate ID</button>
+    <div className="form-page center">
+      <div className="form-container center">
+      <h1>Login</h1>
+        <form className="form">
+          <label for="id" className="left-align">
+            Email
+          </label>
+          <input type="text" id="id"></input>
+          <label for="password" className="left-align">
+            Password
+          </label>
+          <input type="text" id="password"></input>
+          <button className="primary-blue">Login</button>
+          <button className="secondary-grey">Sign Up</button>
         </form>
+      </div>
     </div>
-  )
+  );
 }
