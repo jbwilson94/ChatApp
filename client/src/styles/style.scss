@@ -1,14 +1,14 @@
-.primary-blue {
-    background-color: aqua;
-}
+$primary-blue: #007bff;
+$secondary-grey: grey;
+$background: #e3e3e3;
 
-.secondary-grey {
-    background-color: grey;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
 }
 
 .center {
@@ -23,26 +23,51 @@ body {
   background-color: #e3e3e3;
 
   .form-container {
-    max-width: 300px;
+    width: 40vw;
+    min-width: 300px;
+    height: 50vh;
+    min-height: 300px;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 10%;
-    box-shadow: 5px 10px;
+
 
     .form {
         padding-right: 30px;
         padding-left: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         display: flex;
         flex-direction: column;
+        width: 70%;
+
+        h1 {
+            color: #e3e3e3;
+        }
 
         input,
         button {
             margin-bottom: 10px;
-            width: 200px;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
-      }
+            margin: 0;
+            border: 1px solid #ced4da;
+            font-size: 16px;
+        }
+
+        #inputEmail, #inputPassword {
+            padding: 10px 15px;
+        }
+
+        #login-button, #signup-button {
+            background-color: $primary-blue;
+            border: none;
+            padding: 10px;
+            border-radius: .3rem;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        #signup-button {
+            background-color: $secondary-grey;
+        }
     }
   }
 }

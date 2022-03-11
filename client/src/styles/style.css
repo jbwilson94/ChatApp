@@ -1,14 +1,9 @@
-.primary-blue {
-  background-color: aqua;
-}
-
-.secondary-grey {
-  background-color: grey;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
 }
 
 .center {
@@ -30,21 +25,20 @@ body {
 }
 
 .form-page .form-container {
-  max-width: 300px;
+  width: 40vw;
+  min-width: 300px;
+  height: 50vh;
+  min-height: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
-  border-radius: 10%;
-  -webkit-box-shadow: 5px 10px;
-          box-shadow: 5px 10px;
 }
 
 .form-page .form-container .form {
   padding-right: 30px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,14 +46,38 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 70%;
+}
+
+.form-page .form-container .form h1 {
+  color: #e3e3e3;
 }
 
 .form-page .form-container .form input,
 .form-page .form-container .form button {
   margin-bottom: 10px;
-  width: 200px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -moz-box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+}
+
+.form-page .form-container .form #inputEmail, .form-page .form-container .form #inputPassword {
+  padding: 10px 15px;
+}
+
+.form-page .form-container .form #login-button, .form-page .form-container .form #signup-button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: .3rem;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.form-page .form-container .form #signup-button {
+  background-color: grey;
 }
 /*# sourceMappingURL=style.css.map */
