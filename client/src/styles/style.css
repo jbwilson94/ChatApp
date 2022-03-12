@@ -24,15 +24,28 @@ body {
   background-color: #e3e3e3;
 }
 
+.form-page #light-dark-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background-color: #e3e3e3;
+}
+
 .form-page .form-container {
   width: 35vw;
   min-width: 300px;
-  height: 50vh;
-  min-height: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form-page .form-container h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .form-page .form-container .form {
@@ -49,27 +62,13 @@ body {
   width: 70%;
 }
 
-.form-page .form-container .form h1 {
-  color: #e3e3e3;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.form-page .form-container .form input,
-.form-page .form-container .form button {
+.form-page .form-container .form input {
   margin-bottom: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -moz-box-sizing: border-box;
   margin: 0;
   border: 1px solid #ced4da;
   font-size: 16px;
-}
-
-.form-page .form-container .form #inputEmail, .form-page .form-container .form #inputPassword {
   padding: 10px 15px;
+  margin-bottom: 2px;
 }
 
 .form-page .form-container .form #login-button, .form-page .form-container .form #signup-button {

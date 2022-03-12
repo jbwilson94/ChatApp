@@ -20,15 +20,24 @@ body {
 .form-page {
   width: 100%;
   height: 100vh;
-  background-color: #e3e3e3;
+  background-color: $background;
+
+  #light-dark-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background-color: $background;
+  }
 
   .form-container {
     width: 35vw;
     min-width: 300px;
-    height: 50vh;
-    min-height: 300px;
     flex-direction: column;
 
+    h1 {
+      user-select: none;
+  }
 
     .form {
         padding-right: 30px;
@@ -38,23 +47,13 @@ body {
         flex-direction: column;
         width: 70%;
 
-        h1 {
-            color: #e3e3e3;
-            user-select: none;
-        }
-
-        input,
-        button {
+        input {
             margin-bottom: 10px;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
             margin: 0;
             border: 1px solid #ced4da;
             font-size: 16px;
-        }
-
-        #inputEmail, #inputPassword {
             padding: 10px 15px;
+            margin-bottom: 2px;
         }
 
         #login-button, #signup-button {
