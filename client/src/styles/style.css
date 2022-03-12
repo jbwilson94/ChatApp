@@ -25,7 +25,7 @@ body {
 }
 
 .form-page .form-container {
-  width: 40vw;
+  width: 35vw;
   min-width: 300px;
   height: 50vh;
   min-height: 300px;
@@ -51,6 +51,10 @@ body {
 
 .form-page .form-container .form h1 {
   color: #e3e3e3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .form-page .form-container .form input,
