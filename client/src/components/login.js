@@ -2,13 +2,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
 
 export default function login() {
+  let isDark = false;
+
   function changeLightMode() {
     let lightColor = "#e3e3e3";
-    let darkColor = "e3e3e3"; 
-    document.getElementById("form-page").style.backgroundColor = "#121212";
-    document.getElementById("light-dark-icon-button").style.backgroundColor = "#121212";
-    document.getElementById("form-h1").style.color = "#e3e3e3";
-    document.getElementById("light-dark-icon").style.color = "#e3e3e3";
+    let darkColor = "#121212"; 
+
+    if(!isDark) {
+      document.getElementById("form-page").style.backgroundColor = darkColor;
+      document.getElementById("light-dark-icon-button").style.backgroundColor = darkColor;
+      document.getElementById("form-h1").style.color = lightColor;
+      document.getElementById("light-dark-icon").style.color = lightColor;
+      isDark = true;
+    } else {
+      document.getElementById("form-page").style.backgroundColor = lightColor;
+      document.getElementById("light-dark-icon-button").style.backgroundColor = lightColor;
+      document.getElementById("form-h1").style.color = darkColor;
+      document.getElementById("light-dark-icon").style.color = darkColor;
+      isDark = false;
+    }
   }
 
   return (

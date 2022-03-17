@@ -24,7 +24,7 @@ body {
   background-color: #e3e3e3;
 }
 
-.form-page #light-dark-icon {
+.form-page #light-dark-icon-button {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -78,6 +78,7 @@ body {
   border-radius: .3rem;
   margin-top: 10px;
   color: #fff;
+  font-size: large;
 }
 
 .form-page .form-container .form #signup-button {

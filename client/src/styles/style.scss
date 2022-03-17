@@ -22,7 +22,7 @@ body {
   height: 100vh;
   background-color: $background;
 
-  #light-dark-icon {
+  #light-dark-icon-button {
     position: absolute;
     right: 20px;
     top: 20px;
@@ -63,6 +63,7 @@ body {
             border-radius: .3rem;
             margin-top: 10px;
             color: #fff;
+            font-size: large;
         }
 
         #signup-button {
