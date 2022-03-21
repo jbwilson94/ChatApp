@@ -2,12 +2,12 @@ $primary-blue: #007bff;
 $secondary-grey: grey;
 $background: #e3e3e3;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 100;
 }
 
@@ -37,40 +37,43 @@ body {
 
     h1 {
       user-select: none;
-  }
+    }
+
+    #login-button,
+    #signup-button {
+      background-color: $primary-blue;
+      border: none;
+      padding: 10px;
+      border-radius: 0.3rem;
+      margin-top: 10px;
+      color: #fff;
+      font-size: large;
+    }
+
+    #signup-button {
+      width: 70%;
+      background-color: $secondary-grey;
+    }
 
     .form {
-        padding-right: 30px;
-        padding-left: 30px;
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
+      padding-right: 30px;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
 
-        input {
-            margin-bottom: 10px;
-            margin: 0;
-            border: 1px solid #ced4da;
-            font-size: 16px;
-            padding: 10px 15px;
-            margin-bottom: 2px;
-        }
+      input {
+        margin-bottom: 10px;
+        margin: 0;
+        border: 1px solid #ced4da;
+        font-size: 16px;
+        padding: 10px 15px;
+        margin-bottom: 2px;
+      }
 
-        #login-button, #signup-button {
-            background-color: $primary-blue;
-            border: none;
-            padding: 10px;
-            border-radius: .3rem;
-            margin-top: 10px;
-            color: #fff;
-            font-size: large;
-        }
-
-        #signup-button {
-            background-color: $secondary-grey;
-        }
+      #signup-button {
+        background-color: $secondary-grey;
+      }
     }
   }
 }
-
-

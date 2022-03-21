@@ -1,41 +1,40 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
+import { useState } from "react";
 
-export default function login() {
-  let isDark = false;
+export default function Login({ changeView }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  function changeLightMode() {
-    let lightColor = "#e3e3e3";
-    let darkColor = "#121212"; 
-
-    if(!isDark) {
-      document.getElementById("form-page").style.backgroundColor = darkColor;
-      document.getElementById("light-dark-icon-button").style.backgroundColor = darkColor;
-      document.getElementById("form-h1").style.color = lightColor;
-      document.getElementById("light-dark-icon").style.color = lightColor;
-      isDark = true;
-    } else {
-      document.getElementById("form-page").style.backgroundColor = lightColor;
-      document.getElementById("light-dark-icon-button").style.backgroundColor = lightColor;
-      document.getElementById("form-h1").style.color = darkColor;
-      document.getElementById("light-dark-icon").style.color = darkColor;
-      isDark = false;
-    }
+  function handleSignUpClick() {
+    changeView(false);
   }
 
   return (
     <div id="form-page" className="form-page center">
-      <button id="light-dark-icon-button" onClick={changeLightMode}>
-        <FontAwesomeIcon id="light-dark-icon" icon={faCircleHalfStroke} />
-      </button>
       <div className="form-container center">
-      <h1 id="form-h1">Sign In</h1>
+        <h1 id="form-h1">Sign In</h1>
         <form className="form">
-          <input id="inputEmail" type="email" placeholder="Email Address" required autoFocus></input>
-          <input id="inputPassword" type="password" placeholder="Password" required></input>
+          <input
+            id="email"
+            type="email"
+            placeholder="Email Address"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            required
+            autoFocus
+          ></input>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            required
+          ></input>
           <button id="login-button">Login</button>
-          <button id="signup-button">Sign Up</button>
         </form>
+        <button id="signup-button" onClick={handleSignUpClick}>
+          Sign Up
+        </button>
       </div>
     </div>
   );
