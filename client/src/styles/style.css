@@ -34,7 +34,7 @@ body {
 
 .form-page .form-container {
   width: 35vw;
-  min-width: 300px;
+  min-width: 400px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
